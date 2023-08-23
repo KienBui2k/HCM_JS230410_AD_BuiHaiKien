@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<!-- npm init -->
+<!-- npx tsc --init -->
+<!-- npm i typescript --save-dev -->
+
+<body>
+    <div id="root">
+        <div class="content_game">
+            <div class="header_game">
+                <div class="total_game">
+                    <div class="total_player">
+                        <h2>Player : </h2>
+                        <h2 id="total_player_number">3</h2>
+                    </div>
+                    <div class="total_points">
+                        <h2>Total Points : </h2>
+                        <h2 id="total_points_number"> 6</h2>
+                    </div>
+                </div>
+                <div class="title_game">
+                    <h1>Bảng điểm</h1>
+                </div>
+            </div>
+            <div class="body_game">
+                <!-- <div class="player">
+                    <div class="player_edit">
+                        <div class="delete_pl">
+                            <i class="fa-solid fa-x"></i>
+                        </div>
+                        <div class="rank_pl">
+                            <i class="fa-solid fa-crown ranking kingPlayer"></i>
+                        </div>
+                    </div>
+                    <div class="player_name">
+                        <h3>bùi hải kiên</h3>
+                    </div>
+                    <div class="player_points">
+                        <span><i class="fa-solid fa-minus"></i></span>
+                        <span class="point">6</span>
+                        <span><i class="fa-solid fa-plus"></i></span>
+                    </div>
+                </div> -->
+
+            </div>
+            <div class="footer_game">
+                <div class="input_name_player">
+                    <input id="add_player" type="text" placeholder="Enter a name Player...">
+                </div>
+                <div class="add_btn">
+                    <span onclick="createNewPlayer()">ADD PLAYER</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="toastSuccess" class="toastSuccess"></div>
+    <div id="toastError" class="toastError"></div>
+    <script src="./main.js"></script>
+</body>
+
+</html>

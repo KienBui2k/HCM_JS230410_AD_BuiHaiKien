@@ -1,0 +1,252 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body #root {
+    max-width: 1440px;
+    width: 1440px;
+    min-height: 500px;
+    /* height: 500px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content_game {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.content_game .header_game {
+    width: 100%;
+    height: 112px;
+    background-color: rgb(13, 183, 132);
+    display: flex;
+    flex-direction: row;
+}
+.header_game .total_game {
+    width: 25%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+}
+.total_game .total_player {
+    width: 100%;
+    height: 50%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.total_game .total_points {
+    width: 100%;
+    height: 50%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.total_game .total_player h2 {
+    margin: 0 4px;
+}
+.total_game .total_points h2 {
+    margin: 0 4px;
+}
+.header_game .title_game {
+    width: 75%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.title_game h1 {
+    width: 50%;
+    text-align: start;
+    color: white;
+}
+.content_game .footer_game {
+    width: 100%;
+    height: 100px;
+    background-color: rgb(13, 183, 132);
+    display: flex;
+    flex-direction: row;
+}
+.footer_game .input_name_player {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer_game .input_name_player input {
+    width: 90%;
+    height: 50%;
+    background-color: rgb(18, 144, 106);
+    border: none;
+    color: white;
+    outline: none;
+    padding-left: 12px;
+    border-radius: 8px;
+    font-size: 18px;
+}
+.footer_game .input_name_player input::placeholder {
+    color: white;
+    /* padding-left: 12px; */
+}
+.footer_game .add_btn {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer_game .add_btn span {
+    font-size: 20px;
+    font-weight: 800;
+    background-color: white;
+    padding: 16px;
+    border-radius: 12px;
+}
+.footer_game .add_btn span:hover {
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+.content_game .body_game {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.content_game .body_game .player {
+    width: 100%;
+    height: 100px;
+    background-color: aliceblue;
+    /* border: 1px solid black; */
+    margin-bottom: 4px;
+    display: flex;
+}
+.player .player_edit {
+    width: 12%;
+    height: 100%;
+
+    display: flex;
+}
+.player_edit .delete_pl {
+    width: 50%;
+    height: 100%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.player_edit .delete_pl i {
+    font-size: 24px;
+    font-weight: 700;
+    color: rgb(73, 74, 76);
+}
+.player_edit .rank_pl {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.player_edit .rank_pl i:hover,
+.player_edit .delete_pl i:hover {
+    cursor: pointer;
+    background-color: white;
+    padding: 8px;
+}
+.player_edit .rank_pl i {
+    font-size: 24px;
+    font-weight: 700;
+    color: rgb(73, 74, 76);
+}
+.player_edit .rank_pl .ranking {
+    color: rgb(237, 210, 6) !important;
+}
+.player .player_name {
+    width: 58%;
+    height: 100%;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+.player .player_name h3 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-left: 40px;
+}
+.player .player_points {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.player .player_points span {
+    width: 32%;
+    height: 60%;
+    background-color: rgb(208, 218, 218);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    border-radius: 12px;
+}
+.player .player_points span:hover {
+    cursor: pointer;
+}
+.player .player_points .point {
+    font-size: 28px;
+    font-weight: 600;
+    background-color: rgb(238, 246, 246);
+}
+.no_player {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+}
+.toastSuccess {
+    visibility: hidden;
+    min-width: 250px;
+    margin-left: -125px;
+    background-color: rgb(40, 194, 40);
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    top: 80px;
+    font-size: 17px;
+}
+.toastError {
+    visibility: hidden;
+    min-width: 250px;
+    margin-left: -125px;
+    background-color: rgb(241, 24, 16);
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    top: 80px;
+    font-size: 17px;
+}
